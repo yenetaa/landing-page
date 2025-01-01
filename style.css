@@ -5,6 +5,7 @@ body {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: auto;
+    color: white;
 }
 
 .container {
@@ -23,7 +24,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
     font-size: 18px;
 }
 
@@ -34,6 +34,17 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h1, h2, h3 {
+    line-height: 1.5;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .nav-links {
@@ -67,7 +78,7 @@ a {
 }
 
 .header {
-    margin-top: 85px;
+    margin-top: 100px;
     gap: 70px;
     display: flex;
     align-items: center;
@@ -84,7 +95,6 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: white;
     font-weight: 300;
     padding: 12px 24px;
     border-radius: 90px;
@@ -93,22 +103,16 @@ a {
 }
 
 h1 {
-    color: white;
-    font-weight: 500;
     font-size: 48px;
-    line-height: 150%;
-    margin-block-start: 20px;
-    margin-block-end: 0;
+    margin-block-start: 15px;
+    margin-block-end: 15px;
 }
 
-.header-p {
+p {
     font-weight: 300;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 1.5;
     color: #E4E4E7;
-    margin-block-start: 14px;
-    margin-block-end: 0;
-    margin-bottom: 50px;
 }
 
 .header-image {
@@ -120,7 +124,107 @@ h1 {
     color: #CAFF33;
 }
 
-p {
-    margin-block-start: 0;
-    margin-block-end: 0;
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.products, .testimonials{
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.title-container-flex {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.toggle-button {
+    display: flex;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #1C1C1C;
+    border: 1px solid #262626;
+    border-radius: 99px;
+    justify-self: end;
+    padding: 14px 14px;
+}
+
+.toggle {
+    padding: 14px 24px;
+    border-radius: 99px;
+}
+
+.individuals {
+    background-color: #CAFF33;
+    color: #1C1C1C;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.products-content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.first {
+    border-right: 1px solid #262626;
+    padding-right: 50px;
+}
+
+.second {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-right: 1px solid #262626;
+}
+
+.third {
+    padding-left: 50px;
+}
+
+.products-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.width-910 {
+    width: 910px;
+}
+
+.testimonials-container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+}
+
+.testimonial-text {
+    padding: 50px 0;
+    color: white;
+    font-weight: 400;
+}
+
+.testimonial-name {
+    color: #CAFF33;
+    font-size: 18px;
 }
